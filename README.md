@@ -1,79 +1,88 @@
 # Git workshop for team
 
-Structure and commands
+## Structure and commands
 
-- Install brew - The Missing Package Manager for macOS
+### Install brew - The Missing Package Manager for macOS
 
-  Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
+Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
 
-  ```bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  ```
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-- Install iTerm2
+---
 
-  iTerm2 is a terminal emulator for macOS that does amazing things
+### Install iTerm2
 
-  ```bash
-  brew install --cask iterm2
-  ```
+iTerm2 is a terminal emulator for macOS that does amazing things
 
-  basic commands
+```bash
+brew install --cask iterm2
+```
 
-  ```bash
-  ls
-  cd
-  cd ~/
-  cd /
-  cd ..
-  touch
-  mkdir
-  echo
-  echo "Some text" > smth
-  echo "Some text" >> smth
-  cp
-  mv
-  rm
-  rm -rf
-  rmdir
-  pwd
-  cat
-  less
-  chmod
-  sudo
-  ```
+basic commands
 
-- Install Git on Mac
+```bash
+ls
+cd
+cd ~/
+cd /
+cd ..
+touch
+mkdir
+echo
+echo "Some text" > smth
+echo "Some text" >> smth
+cp
+mv
+rm
+rm -rf
+rmdir
+pwd
+cat
+less
+chmod
+sudo
+```
 
-  ```bash
-  brew install git
+---
 
-  #check version
-  git --version
-  ```
+### Install Git on Mac
 
-- VScode install
+```bash
+brew install git
 
-  ```bash
-  brew install --cask visual-studio-code
-  ```
+#check version
+git --version
+```
 
-- Basic setup git
+---
 
-  open terminal and paste this commands
+### VScode install
 
-  ```bash
-  git config --global user.name "John Doe"
-  git config --global user.email johndoe@example.com
-  git config --global core.editor code --wait
-  ```
+```bash
+brew install --cask visual-studio-code
+```
 
-- [github.com](http://github.com) sign up
+---
 
-  use the same email as basic setup git "johndoe@example.com"
+### Basic setup git
+
+open terminal and paste this commands
+
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global core.editor code --wait
+```
+
+---
+
+### [github.com](http://github.com) sign up
+
+use the same email as basic setup git "johndoe@example.com"
 
 - make working directory
-
   open terminal and make directory for our workshop
 
   ```bash
@@ -82,237 +91,237 @@ Structure and commands
   cd projects/git_workshop
   ```
 
-- Markdown
+---
 
-  we will working with markdown file, it's just text with a few special symbols
+### Markdown
 
-  ## Headers
+we will working with markdown file, it's just text with a few special symbols
 
-  ```markdown
-  # This is an <h1> tag
+#### Headers
 
-  ## This is an <h2> tag
+```markdown
+# This is an <h1> tag
 
-  ###### This is an <h6> tag
-  ```
+## This is an <h2> tag
 
-  ## Emphasis
+###### This is an <h6> tag
+```
 
-  ```markdown
-  _This text will be italic_
-  _This will also be italic_
+#### Emphasis
 
-  **This text will be bold**
-  **This will also be bold**
+```markdown
+_This text will be italic_
+_This will also be italic_
 
-  _You **can** combine them_
-  ```
+**This text will be bold**
+**This will also be bold**
 
-  ## **Lists**
+_You **can** combine them_
+```
 
-  ### **Unordered**
+#### **Lists**
 
-  ```markdown
-  - Item 1
-  - Item 2
-    - Item 2a
-    - Item 2b
-  ```
+##### **Unordered**
 
-  ### **Ordered**
+```markdown
+- Item 1
+- Item 2
+  - Item 2a
+  - Item 2b
+```
 
-  ```markdown
-  1. Item 1
-  1. Item 2
-  1. Item 3
-     1. Item 3a
-     1. Item 3b
-  ```
+##### **Ordered**
 
-  ## Images
+```markdown
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+```
 
-  ```markdown
-  ![GitHub Logo](/images/logo.png)
-  Format: ![Alt Text](url)
-  ```
+#### Images
 
-  [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+```markdown
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+```
 
-- Prepare team repository
+#### [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
-  what a content will be at repo?
+### Prepare team repository
 
-  - teammates with personal info about hobbies, musical preferences, pets, most interesting trips
-  - team of avatars - what superhero does everyone associate with
-  - some useful info about team, unspoken rules, important presentation about behave in team
-  - suggestions of music, movies, books, learning corses
-  - career or learning plans
+what a content will be at repo?
 
-- Git basic commands
+- teammates with personal info about hobbies, musical preferences, pets, most interesting trips
+- team of avatars - what superhero does everyone associate with
+- some useful info about team, unspoken rules, important presentation about behave in team
+- suggestions of music, movies, books, learning corses
+- career or learning plans
 
-  most our work we will do with existing repo which we clone from GitHub, but git ≠ GitHub. to see it we initialise a new repo at local machine
+---
 
-  - local repo
+### Git basic commands
 
-    - init
+most our work we will do with existing repo which we clone from GitHub, but git ≠ GitHub. to see it we initialise a new repo at local machine
 
-      into working directory
+- #### local repo
 
-      ```bash
-      mkdir test && cd test
-      touch test.md && code .
-      ```
+  - init
 
-      at terminal execute follow command
+    into working directory
 
-      ```bash
-      git init
-      ```
+    ```bash
+    mkdir test && cd test
+    touch test.md && code .
+    ```
 
-    - making changes at file readme.md, save it
+    in terminal execute follow command
 
-      ```bash
-      code .
-      git status
-      ```
+    ```bash
+    git init
+    ```
 
-      ![Git%20workshop%20for%20team%20bec646a18fb64998b9ecbcd564067035/Screenshot_2021-03-10_at_13.11.49.png](Git%20workshop%20for%20team%20bec646a18fb64998b9ecbcd564067035/Screenshot_2021-03-10_at_13.11.49.png)
+  - making changes at file readme.md, save it
 
-    - add
+    ```bash
+    code .
+    git status
+    ```
 
-      ```bash
-      git add README.md
-      ```
+  - add
 
-    - commit
+    ```bash
+    git add README.md
+    ```
 
-      ```bash
-      git commit -m "I'm super puper gitter add a few headers"
-      git status
-      ```
+  - commit
 
-    - branch
+    ```bash
+    git commit -m "I'm super puper gitter add a few headers"
+    git status
+    ```
 
-      ```bash
-      git branch BRANCH_NAME.
-      ```
+  - branch
 
-    - checkout
+    ```bash
+    git branch BRANCH_NAME.
+    ```
 
-      ```bash
-      git checkout BRANCH_NAME.
+  - checkout
 
-      # we can create new branch and swich to it by one command
-      git checkout -b BRANCH_NAME.
-      ```
+    ```bash
+    git checkout BRANCH_NAME.
 
-    - merge
+    # we can create new branch and swich to it by one command
+    git checkout -b BRANCH_NAME.
+    ```
 
-      ```bash
-      git checkout BRANCH_NAME && git merge master
-      ```
+  - merge
 
-  - How to make a pull-request to remote repo?
+    ```bash
+    git checkout BRANCH_NAME && git merge master
+    ```
 
-    - fork repo
+- #### How to make a pull-request to remote repo?
 
-      ```bash
-      https://github.com/SergeyShytikov/team-git-workshop.git
-      ```
+  - fork repo
 
-    - clone
+    ```bash
+    https://github.com/SergeyShytikov/team-git-workshop.git
+    ```
 
-      return to projects dir and clone your fork to your local machine from GitHub
+  - clone
 
-      ```bash
-      git clone https://github.com/SergeyShytikov/team-git-workshop.git
-      ```
+    return to projects dir and clone your fork to your local machine from GitHub
 
-      change directory on repo
+    ```bash
+    git clone https://github.com/SergeyShytikov/team-git-workshop.git
+    ```
 
-      ```bash
-      cd team-git-workshop
-      ```
+    change directory on repo
 
-    - add repo to upstream
+    ```bash
+    cd team-git-workshop
+    ```
 
-      Add this repository <link parent repo> as an upstream
+  - add repo to upstream
 
-      ```bash
-      git remote add upstream https://github.com/SergeyShytikov/team-git-workshop.git
-      ```
+    Add this repository <link parent repo> as an upstream
 
-    - checkout
+    ```bash
+    git remote add upstream https://github.com/SergeyShytikov/team-git-workshop.git
+    ```
 
-      ```bash
-      git checkout master 
+  - checkout
 
-      #and then create new branch, naming is up to you (aka feature branch) 
-      git checkout -b BRANCH_NAME.
-      ```
+    ```bash
+    git checkout master 
 
-    - making changes at file README and save it
+    #and then create new branch, naming is up to you (aka feature branch) 
+    git checkout -b BRANCH_NAME.
+    ```
 
-      Make some changes to your local repository. It could be anything, really. If you have found a typo in README - great! Take care to give your PR a meaningful name and description.
+  - making changes at file README and save it
 
-      ```bash
-      code .
-      git status
-      ```
+    Make some changes to your local repository. It could be anything, really. If you have found a typo in README - great! Take care to give your PR a meaningful name and description.
 
-      ![Git%20workshop%20for%20team%20bec646a18fb64998b9ecbcd564067035/Screenshot_2021-03-10_at_13.11.49.png](Git%20workshop%20for%20team%20bec646a18fb64998b9ecbcd564067035/Screenshot_2021-03-10_at_13.11.49.png)
+    ```bash
+    code .
+    git status
+    ```
 
-    - add
+  - add
 
-      ```bash
-      git add README.md
-      ```
+    ```bash
+    git add README.md
+    ```
 
-    - commit
+  - commit
 
-      Сommit your changes to newly created feature branch
+    Сommit your changes to newly created feature branch
 
-      ```bash
-      git commit -m "I'm super puper gitter add a few headers"
-      git status
-      ```
+    ```bash
+    git commit -m "I'm super puper gitter add a few headers"
+    git status
+    ```
 
-    - checkout
+  - checkout
 
-      Сheckout master branch:
+    Сheckout master branch:
 
-      ```bash
-      git checkout master
-      ```
+    ```bash
+    git checkout master
+    ```
 
-    - pull
+  - pull
 
-      Pull latest changes from upstream master branch:
+    Pull latest changes from upstream master branch:
 
-      ```bash
-      git pull upstream master
-      ```
+    ```bash
+    git pull upstream master
+    ```
 
-    - merge
+  - merge
 
-      Merge master branch into your feature branch:
+    Merge master branch into your feature branch:
 
-      ```bash
-      git checkout BRANCH_NAME && git merge master
-      ```
+    ```bash
+    git checkout BRANCH_NAME && git merge master
+    ```
 
-      Resolve any merge conflicts if there are any
+    Resolve any merge conflicts if there are any
 
-    - push
+  - push
 
-      Push feature branch to your remote repository:
+    Push feature branch to your remote repository:
 
-      ```bash
-      git push --set-upstream origin BRANCH_NAME
-      ```
+    ```bash
+    git push --set-upstream origin BRANCH_NAME
+    ```
 
-    - pull request
+  - pull request
 
-      Make pull-request from your repository to [this](https://github.com/Kottans/mock-repo) repository via GitHub web-interface
+    Make pull-request from your repository to [this](https://github.com/Kottans/mock-repo) repository via GitHub web-interface
 
-- making GitHub Pages from repo
+- #### making GitHub Pages from repo
