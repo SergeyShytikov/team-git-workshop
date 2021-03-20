@@ -2,6 +2,10 @@
 
 ## Structure and commands
 
+## Stage 0 (self-prepare steps before workshop)
+
+1.
+
 ### Install brew - The Missing Package Manager for macOS
 
 Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
@@ -11,6 +15,8 @@ Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
 ```
 
 ---
+
+2.
 
 ### Install iTerm2
 
@@ -47,6 +53,8 @@ sudo
 
 ---
 
+3.
+
 ### Install Git on Mac
 
 ```bash
@@ -58,6 +66,8 @@ git --version
 
 ---
 
+4.
+
 ### VScode install
 
 ```bash
@@ -65,6 +75,8 @@ brew install --cask visual-studio-code
 ```
 
 ---
+
+5.
 
 ### Basic setup git
 
@@ -78,12 +90,19 @@ git config --global core.editor code --wait
 
 ---
 
+6.
+
 ### [github.com](http://github.com) sign up
 
-use the same email as basic setup git "johndoe@example.com"
+## use the same email as basic setup git "johndoe@example.com"
 
-- make working directory
-  open terminal and make directory for our workshop
+---
+
+## Stage 1 (steps we will do on workshop)
+
+### Create working directory
+
+- open terminal and make directory for our workshop
 
   ```bash
   ~
@@ -148,6 +167,8 @@ Format: ![Alt Text](url)
 ```
 
 #### [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+
+---
 
 ### Prepare team repository
 
