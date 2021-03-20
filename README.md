@@ -343,6 +343,6 @@ most our work we will do with existing repo which we clone from GitHub, but git 
 
   - pull request
 
-    Make pull-request from your repository to [this](https://github.com/Kottans/mock-repo) repository via GitHub web-interface
+    Make pull-request from your repository to [this]() repository via GitHub web-interface
 
 - #### making GitHub Pages from repo
