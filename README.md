@@ -94,7 +94,7 @@ git config --global core.editor code --wait
 
 ### [github.com](http://github.com) sign up
 
-## use the same email as basic setup git "johndoe@example.com"
+use the same email as basic setup git "johndoe@example.com"
 
 ---
 
