@@ -165,20 +165,20 @@ _You **can** combine them_
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
 ```
+#### Links
+
+```markdown
+[GitHub repo](https://github.com/SergeyShytikov/WIX-Data-Labeling-Team)
+Format: [Alt Text](url)
+```
 
 #### [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
 ---
 
-### Prepare team repository
+### GitHub repository for workshop
 
-what a content will be at repo?
-
-- teammates with personal info about hobbies, musical preferences, pets, most interesting trips
-- team of avatars - what superhero does everyone associate with
-- some useful info about team, unspoken rules, important presentation about behave in team
-- suggestions of music, movies, books, learning corses
-- career or learning plans
+[WIX Data Labeling Team](https://github.com/SergeyShytikov/WIX-Data-Labeling-Team)
 
 ---
 
@@ -193,8 +193,8 @@ most our work we will do with existing repo which we clone from GitHub, but git 
     into working directory
 
     ```bash
-    mkdir test && cd test
-    touch test.md && code .
+    mkdir 'NAME_FOLDER' && cd 'NAME_FOLDER'
+    touch 'NAME_FILE'.md && code .
     ```
 
     in terminal execute follow command
@@ -249,7 +249,7 @@ most our work we will do with existing repo which we clone from GitHub, but git 
   - fork repo
 
     ```bash
-    https://github.com/SergeyShytikov/team-git-workshop.git
+    https://github.com/SergeyShytikov/WIX-Data-Labeling-Team
     ```
 
   - clone
@@ -257,7 +257,7 @@ most our work we will do with existing repo which we clone from GitHub, but git 
     return to projects dir and clone your fork to your local machine from GitHub
 
     ```bash
-    git clone https://github.com/SergeyShytikov/team-git-workshop.git
+    git clone https://github.com/SergeyShytikov/WIX-Data-Labeling-Team
     ```
 
     change directory on repo
@@ -268,10 +268,10 @@ most our work we will do with existing repo which we clone from GitHub, but git 
 
   - add repo to upstream
 
-    Add this repository <link parent repo> as an upstream
+    Add this [repository](https://github.com/SergeyShytikov/WIX-Data-Labeling-Team)  as an upstream
 
     ```bash
-    git remote add upstream https://github.com/SergeyShytikov/team-git-workshop.git
+    git remote add upstream https://github.com/SergeyShytikov/WIX-Data-Labeling-Team
     ```
 
   - checkout
@@ -283,9 +283,24 @@ most our work we will do with existing repo which we clone from GitHub, but git 
     git checkout -b BRANCH_NAME.
     ```
 
-  - making changes at file README and save it
+  - making changes in README file,save it, add images to folders
 
-    Make some changes to your local repository. It could be anything, really. If you have found a typo in README - great! Take care to give your PR a meaningful name and description.
+    Make changes in  your local repository:
+
+    To 'teammates':
+    - add "### Header with your name"
+    - add few words self description
+    - add social links
+    - add your photo 300x200px
+
+    To 'our pets':
+    - add photo your pet
+    - add "### Name"
+
+    To 'suggestions':
+    - add  music links
+    - add links to movies
+    - add trips
 
     ```bash
     code .
@@ -343,6 +358,6 @@ most our work we will do with existing repo which we clone from GitHub, but git 
 
   - pull request
 
-    Make pull-request from your repository to [this]() repository via GitHub web-interface
+    Make pull-request from your repository to [this](https://github.com/SergeyShytikov/WIX-Data-Labeling-Team) repository via GitHub web-interface. Take care to give your PR a meaningful name and description.
 
 - #### making GitHub Pages from repo
