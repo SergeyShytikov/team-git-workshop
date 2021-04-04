@@ -9,6 +9,9 @@
 ### Install brew - The Missing Package Manager for macOS
 
 Homebrew installs the stuff you need that Apple (or your Linux system) didn’t.
+- How open terminal?
+  - *type in spotlight search "terminal" or go to Launchpad > Other > Terminal*
+- In opened window copy and paste following commands
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -50,6 +53,7 @@ less
 chmod
 sudo
 ```
+- after installing iTerm2 open it and we will use iTerm2 insted of  default terminal
 
 ---
 
@@ -57,10 +61,11 @@ sudo
 
 ### Install Git on Mac
 
+- to opened iTerm2 window paste this code
 ```bash
 brew install git
 
-#check version
+#after installing check version
 git --version
 ```
 
@@ -80,7 +85,7 @@ brew install --cask visual-studio-code
 
 ### Basic setup git
 
-open terminal and paste this commands
+- open terminal and paste this commands
 
 ```bash
 git config --global user.name "John Doe"
