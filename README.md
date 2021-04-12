@@ -366,3 +366,9 @@ most our work we will do with existing repo which we clone from GitHub, but git 
     Make pull-request from your repository to [this](https://github.com/SergeyShytikov/WIX-Data-Labeling-Team) repository via GitHub web-interface. Take care to give your PR a meaningful name and description.
 
 - #### making GitHub Pages from repo
+
+## Useful links
+- [Kottasns Git Course](https://github.com/kottans/git-course)
+- [Kottasns FrontEnd Course ](https://github.com/kottans/frontend)
+- [Kottans YouTube](https://www.youtube.com/channel/UCAiEMvHpDa7UACh_2tXw5YA)
+- [Kottans Telegram](https://t.me/joinchat/DmX0JBHVkEhV1us2HdMmpA)
